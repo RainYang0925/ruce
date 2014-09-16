@@ -62,11 +62,3 @@ class Mail(object):
         s.close()
         return r
 
-if __name__== "__main__" :
-    subject = '发送邮件测试'
-    content = '<font color="#0000FF">测试</color>'
-    #plugins = [{'subject':'附件1.txt','content':'内容1'},{'subject':'附件2.txt','content':'内容2'}]
-    mail = Mail('smtp.zhangyue.com', 'wanglichao@zhangyue.com', 'zhangyue123')
-    tolist = ['wanglichao@zhangyue.com']
-    mail.send(subject, content, tolist)
-    print 'send ok'
